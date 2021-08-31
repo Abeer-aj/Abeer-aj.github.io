@@ -1,0 +1,1213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ---------------------------homepage ----------------------------------------------------------------- */
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.backimage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.banner .BannerLogo
+{
+  position: absolute;
+  background: url(../img/logoSNA-removebg.png);
+  top: 100px; 
+  right: 150px;
+  width: 60%;
+  height: 60%;
+  background-repeat: no-repeat;
+}
+
+.content
+{
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+  
+}
+
+.responsiveLogo , .responsivename{
+  visibility: hidden;
+}
+
+
+/*
+.banner img{
+  background: url(logoSNA.jpg);
+  margin-top: 50px;
+} 
+
+.content p
+{
+  padding-top: 20px;
+  color: #fff;
+  font-size: 25px;
+} 
+*/
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.about
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.about .contentBx
+{
+  background: #2F94BE;
+  width: 50%;
+  padding: 100px;
+}
+h2.heading
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p.text
+{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.about .imgBx
+{
+  background: url(../img/question.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.services
+{
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+  
+}
+.services .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  
+}
+.services .container .serviceBx
+{
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.services .container .serviceBx img
+{
+  max-width: 100px;
+}
+.services .container .serviceBx a 
+{
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: black;
+  text-decoration: none;
+}
+
+.services .container .serviceBx:hover{
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.562);
+}
+
+.additionService
+{
+  background: #F7DC6F;
+  width: 100%;
+  padding: 100px;
+  margin-top: -300px;
+  padding-top: 300px;
+  min-height: 500px;
+  padding-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.additionService .contentBx
+{
+  max-width: 800px;
+}
+.additionService .imgBx img
+{
+  width: 400px;
+}
+.client
+{
+  background: #162c3b;
+  padding: 100px;
+  text-align: center;
+}
+.client .imgBx
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  
+}
+
+.client .imgBx img
+{
+  max-width: 300px;
+  margin: 20px;
+}
+
+.contact
+{
+  padding: 50px;
+  background: #2F94BE;
+  text-align: center;
+}
+
+.imgBx2
+{
+  background-color: #2F94BE;
+  width: 50%;
+  
+}
+
+.imgBx2 img{
+  
+   width: 95%;
+   margin-top: 40px;
+}
+.redbg
+{
+  background-color: #2F94BE;
+  
+}
+.form .inputBx
+{
+  margin-bottom: 40px;
+}
+.form .inputBx input
+{
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.form .inputBx input::placeholder
+{
+  color: #fff;
+}
+
+.form .inputBx input[type="submit"]
+{
+  width: 150px;
+  background: #fff;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #111;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.form .inputBx input[type="submit"]:hover{
+    background-color: #ccffcc;
+}
+
+/* ---------------------------------------------newsletter form massage--------------------------------------- */
+
+.signuperror {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.signupsuccess {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+
+/*--------------------------------- footer--------------------------------------------------------------------- */ 
+
+.footer
+{
+  background: #162c3b;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footer ul li
+{
+  list-style: none;
+}
+.footer ul li a
+{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+}
+
+/*---------------------------- navigation -------------------------------------------------------------------- */
+.logo {
+  padding: 0;
+  z-index: 1;
+}
+
+.logo img{
+width: 70px;
+height: 70px;
+
+}
+
+  .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+  }
+
+  .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+  }
+
+  .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+  }
+
+  .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+  }
+
+  .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+  }
+
+  .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+  }
+
+  .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+  }
+
+  .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+  }
+
+  .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+        font-size: 20px;
+  }
+
+  .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+  }
+
+  .nav-btn i {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #000;
+        border-radius: 2px;
+        margin-right: 14px;
+        margin-bottom: 5px;
+  }
+
+  .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+  }
+
+  .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+  }
+
+  .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+  }
+
+
+#nav:checked + .nav-btn {
+  transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i {
+  background: #000;
+  transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+  opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+  z-index: 9990;
+  opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-wrapper .act{
+  color: #52BE80;
+}
+
+ul li a:hover {
+  color: #52BE80;
+}
+
+
+
+
+/* ---------------------------------------------common spaces page --------------------------------------------*/
+.csTitle{
+  color: #5DADE2;
+}
+
+.content p{
+  font-size: 20px;
+}
+
+.room
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.room .contentBx
+{
+  background: #2F94BE;
+  width: 50%;
+  padding: 100px;
+}
+
+.room .imgBx
+{
+  width: 50%;
+}
+
+/* CS slideshow */
+.mySlides1, .mySlides2 {display: none}
+
+.pmg {height: 430px;
+      
+	vertical-align: middle;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+	
+	height: 430px;
+    width: 100%;
+  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+   background-color: gray;
+   
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.meetingRoom
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.meetingRoom .contentBx
+{
+  background-color:#162c3b ;
+  width: 50%;
+  padding: 100px;
+}
+
+.meetingRoom .imgBx
+{
+  width: 50%;
+}
+
+.conditions
+{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  background-color: #B4E0C7; 
+}
+
+.conditionsTitle{
+  padding: 100px; 
+  width: 50%;
+  background-color: #B4E0C7; ;
+}
+
+.conditionsTitle h2{
+color: black;
+text-align: center;
+font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  
+}
+
+.conditionTerm{
+  width: 50%;
+  padding: 100px;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  background-color: #B4E0C7; ;
+}
+
+.conditions img{
+  width: 300px;
+  height:100px ;
+  margin-top: 200px;
+  background-color: #B4E0C7; 
+}
+
+.bookingBtn{
+  text-decoration: none;
+  color: black;
+  padding: 5px 50px;
+  background-color: #c1f0c1;
+}
+
+/* ----------------------------------------news page --------------------------------------------------------*/
+.newsSlideshow{
+  padding: 50px;
+  background-color: #12222d;
+}
+
+.swiper-container
+{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color:  #12222d;
+}
+.swiper-slide
+{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+
+}
+.swiper-slide .imgBx-slide
+{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.swiper-slide .imgBx-slide img
+{
+  width: 100%;
+  height: 500px;
+  
+}
+
+.CourseTitle{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-news{
+  
+
+  position: relative;
+  background: #fff;
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact-news img{
+width: 200px;
+height: 200px;
+}
+
+.contact-news img:hover{
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.par-news{
+  color: black;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.additionStyle
+{
+  background: #2F94BE;
+  width: 100%;
+  padding: 100px;
+  margin-top: -300px;
+  padding-top: 300px;
+  min-height: 500px;
+  padding-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+/* --------------------------------------office page ----------------------------------------------------------*/
+.officeConditions{
+  width: 100%;
+  height: 150vh;
+  background-image: url(../img/multi-color-papers-2457290.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.officeService_title{
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.officeConditions .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  
+}
+
+.officeConditions .container .serviceBx
+{
+  position: relative;
+  background: #fff;
+  width: 300px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  
+  
+}
+
+
+.officeConditions .container .serviceBx img
+{
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.officeConditions .container .serviceBx h2
+{
+  text-align: center;
+  color: #2F94BE;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  
+}
+
+.officeConditions .container .serviceBx p{
+  text-align: right;
+  padding-right: 20px;
+}
+
+.officeBooking{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.officeBooking .contentBx-right
+{
+  background: #2F94BE;
+  width: 50%;
+  padding: 150px 50px 150px;
+}
+
+.contentBx-right h2, .contentBx-left h2{
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+.contentBx-right , .contentBx-left p{
+  text-align: right;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.contentBx-right p,h2{
+  color: white;
+}
+
+
+.officeBooking .contentBx-left
+{
+  background: #F7DC6F;
+  width: 50%;
+  padding: 150px 50px 150px;
+}
+
+.contentBx-left h2,p{
+  color: black;
+}
+
+/* ----------------------------------login page & register page --------------------------------------------*/
+.form-box{
+	width: 550px;
+	height: 620px;
+	position: relative;
+	margin: 6% auto;
+	background: white;
+	padding: 5px;
+    border-radius: 30px;
+    justify-content: center;
+   
+}
+
+.form-box h1{
+  margin-top: 30px;
+	text-align: center;
+}
+
+
+
+.button-box{
+	width: 250px;
+	margin: 35px;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.newRegTitle{
+	text-align: center;
+    margin-top: 50px;
+}
+
+
+
+#btn{
+	top: 0;
+	left: 0;
+	right: 10px;
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	background:  linear-gradient(to right, #91E79B,#7DD1E6);
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.input-group-register{
+	top: 50px;
+	padding: 30px;
+}
+
+.input-field-register{
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn-register{
+	
+	margin-top: 50px;
+	margin-left: 5px;
+	width: 95%;
+	padding: 20px 30px;
+	cursor: pointer;
+	display: block;
+	background:  linear-gradient(to right, #91E79B,#7DD1E6);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	font-size: 130%;
+	 font-weight: bold;
+	 color: white;
+}
+
+.toggle-btn{
+	width: 86%;
+	padding: 20px 30px;
+	cursor: pointer;
+	display: block;
+	background:  linear-gradient(to right, #91E79B,#7DD1E6);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	margin-left: 30px;
+	font-size: 130%;
+	 font-weight: bold;
+	 color: white;
+}
+
+.new-register{
+		border: 1px solid blue;
+
+}
+
+
+
+#exit-icon{
+	margin-left: 30px;
+	margin-top: 30px;
+	color: white;
+} 
+
+.signuperror {
+  margin-top:50px;
+  font-family: arial;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+
+.signupsuccess {
+  margin-top:50px;
+  font-family: arial;
+  font-size: 20px;
+  color: green;
+  text-align: center;
+} 
+/* --------------------------------------logistics page----------------------------------------------------------- */
+.accounting{
+  height:400px; background-color:#B4E0C7;
+}
+
+.accounting img {
+  height:200px; width:200px; float:left; margin-top:100px; margin-left:100px; 
+}
+
+.accountingContent{
+  text-align:center;  float:right; margin-top:100px; margin-right:100px;
+}
+
+.feasibility{
+  height:400px; background-color:#2F94BE; 
+}
+
+.feasibility img{
+  height:200px; width:200px; float:right; margin-top:100px; margin-right:100px;
+}
+
+.feasibilityContent{
+  text-align:center;  float:left; margin-top:100px; margin-left:100px;
+}
+
+
+/* --------------------------------------media----------------------------------------------------------- */
+@media (max-width: 991px)
+{
+
+  h2.heading
+  {
+    font-size: 26px;
+  }
+  p.text
+  {
+    font-size: 15px;
+  }
+  
+  header
+  {
+    padding: 20px 50px;
+  }
+  .banner
+  {
+    padding: 50px;
+  }
+
+
+  .BannerLogo{
+    visibility: hidden;
+  }
+
+  .responsiveLogo{
+    visibility: visible;
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+
+  .responsivename{
+    visibility: visible;
+    position: absolute;
+    width: 50%;
+    margin-top: 100px;
+   
+  }
+
+
+
+  .logo img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .banner h2, .csTitle
+  {
+    font-size: 20px;
+  }
+
+  .banner p
+  {
+    font-size: 16px;
+  }
+  .about , .room , .meetingRoom , .conditions , .officeBooking
+  {
+    flex-direction: column;
+  }
+  .about .contentBx, .room .contentBx, .meetingRoom .contentBx , .officeBooking .contentBx-left
+  {
+    padding: 50px;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+  }
+ 
+  .about .imgBx , .room .imgBx , .meetingRoom .imgBx, .officeBooking .contentBx-right
+  {
+    padding: 50px;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .conditions{
+    height: 800px;
+  }
+
+
+  .conditionTerm , .conditionsTitle {
+    padding: 50px;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    
+  }
+
+  .conditionsTitle h2{
+    margin-top: 5px;
+  }
+
+  
+  
+  .services 
+  {
+    padding: 50px;
+  }
+
+  .services h2{
+    text-align: center;
+  }
+  .services .container
+  {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .services .container .serviceBx
+  {
+    margin: 20px;
+  }
+  .services .container .serviceBx
+  {
+    position: relative;
+    background: #fff;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .additionService
+  {
+    padding: 50px;
+    padding-top: 300px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .additionService .imgBx img
+  {
+    margin-top: 40px;
+    max-width: 250px;
+  }
+  .client
+  {
+    padding: 50px;
+  }
+  .client .imgBx
+  {
+    justify-content: center;
+  }
+  
+  .contact
+  {
+    padding: 50px;
+  }
+
+  .imgBx2{
+    display: none;
+  }
+
+ .conditions img{
+   display: none;
+ }
+
+/* news page*/
+ .newsSlideshow{
+   height: 1000px;
+ }
+
+ .newsSlideshow h1{
+   margin-top: 70px;
+   margin-bottom: -30px;
+ }
+
+
+ .swiper-container{
+   margin-top: 150px;
+   
+ }
+
+ 
+ .contact-news{
+   margin-top: 100px;
+  
+ }
+
+ /* common spaces */
+ .csTitle{
+  padding-bottom: 20px;
+}
+
+/* office page */
+.officeConditions{
+  height: 200vh;
+  
+}
+
+.accounting , .feasibility{
+  padding: 50px;
+  height: 90vh;
+}
+
+.accounting img{
+  margin-top: 20px;
+  margin-left: 45px;
+  
+}
+
+.feasibility img{
+  margin-top: 20px;
+  margin-right: 35px;
+}
+
+.accountingContent{
+  
+  width: 100%;
+  height: 50%;
+  margin-right: -10px;
+}
+
+.feasibilityContent {
+  width: 100%;
+  height: 50%;
+  margin-left: 10px;
+}
+
+ .footer
+  {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+    
+  }
+
+  .footer .text{
+    text-align: center;
+  }
+  .footer ul
+  {
+    margin-bottom: 20px;
+  }
+  
+}
+
+
