@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Raleway:wght@300&display=swap');
+
+/* ---------------------------------- index page start ------------------------*/
+html {
+    scroll-behavior: smooth;
+  }
+  header {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 10px;
+  }
+  #section1 {
+      height: 700px;
+      max-width: 100%;
+  }
+  @media only screen and (max-width:768px){
+    #section1{
+    height: 230px;
+    max-width: 100%;
+  }
+  header{
+    margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 10px;
+  }
+  }
+
+  #section1_content{
+    margin-top: 100px;
+  }
+  #section2 {
+    height: auto;
+    max-width: 100%;
+    padding: 50px;
+  }
+  #section3 {
+    height: auto;
+    max-width: 100%;
+    background-color: #684e0047;
+    padding: 80px;
+    margin: 40px;
+    border: 1px solid #664d0324;
+    border-radius: 5px;
+  }
+  h5.card-title {
+      padding-top: 13px;
+  }
+  h5.card-title:hover {
+  color: #212529;
+  }
+  a {
+      text-decoration: none;
+      color: #A79748;
+      font-family: cursive,serif;
+  }
+  .column2 {
+      margin-top: 10px;
+  }
+  #h1_section3{
+  padding-bottom: 30px;
+  color: #6E5712;}
+  #logo {
+    height: auto;
+    max-width: 80%;
+   }
+
+   .card-body:hover{
+     box-shadow: 0 4px 8px 0 #684e0047;
+     transition: 0.3s;
+   }
+/* ---------------------------------- index page end ------------------------*/
+
+/* ---------------------------------- pages header start ------------------------*/
+
+
+.pagesTitle h1 {
+  font-family: 'Mulish', sans-serif;
+font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.pagesTitle img {
+  width: 350px;
+  margin-left: 585px;
+}
+
+@media(max-width: 575.98px) {
+  .pagesTitle{
+    margin-top: 50px;
+  }
+  .pagesTitle img {
+    width: 200px;
+    margin-left: 90px;
+  }
+}
+
+/* ---------------------------------- pages header end ------------------------*/
+
+/*----------------------------------- menu page start----------------------------------------- */
+
+.menu-tab {
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .menu-tab img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .menu-tab .nav.nav-pills .tablinks {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 20px;
+    border: none;
+  }
+
+  
+  .menu-tab .nav.nav-pills .tablinks:hover,
+.menu-tab .nav.nav-pills .tablinks.active {
+  background-color: white;
+  border-bottom: 2px solid #cc9966;
+}
+
+
+.tabcontent{
+    column-count: 2;
+    padding: 30px 0 0 0;
+    column-gap: -40;
+    margin-left: 100px;
+    background: transparent;
+   
+}
+
+
+
+.menu .menu-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  
+  .menu .menu-img img {
+    width: 100%;
+    border-radius: 100px;
+  }
+  
+  .menu .menu-text {
+    width: calc(100% - 100px);
+
+  }
+  
+  .menu .menu-text p {
+    position: relative;
+    display: block;
+    width: 500px;
+    background-color: burlywood;
+
+  }
+  
+  .menu .menu-text p::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 13px;
+    left: 0;
+    border-top: 2px dotted #cccccc;
+    z-index: -1;
+  } 
+  
+  .menu .menu-text p span {
+    
+    float: left;
+    padding-right: 5px;
+    background: white;
+  }
+  
+  .menu .menu-text p strong {
+    
+    float: right;
+    padding-left: 5px;
+    color: rgba(80, 57, 31, 0.589);
+    background: white;
+  }
+
+  .menu-item button{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 45px;
+    padding: 2px 15px ;
+    background-color: #cc9966;
+    color: white;
+    border: none;
+  }
+
+  .menu-item button:hover{
+    background-color: black;
+  }
+
+  
+  @media(max-width: 575.98px) {
+    
+    
+    .menu .menu-text p,
+    .menu .menu-text p strong {
+        display: inline-block;
+        float: none;
+        padding: 0;
+      
+    }
+    
+    .menu .menu-text p span {
+        margin-bottom: 3px;
+        margin-right: 90px;
+    }
+    
+   
+
+    .tabcontent{
+      column-count: 1;
+      margin-left: 10px;
+
+    }
+
+    .menu .menu-text p {
+      position: relative;
+      display: block;
+      width: 400px;
+      background-color: white;
+      border-bottom: 2px dotted #cc9966;
+    }
+
+    .menu .menu-img img {
+      width: 80%;
+    }
+
+    .menu-item button{
+      position: absolute;
+      margin-left: 100px;
+      margin-top: 45px;
+      padding: 2px 15px ;
+      background-color: #cc9966;
+      color: white;
+      border: none;
+    }
+
+    
+
+  }
+
+  /*----------------------------------- menu page end----------------------------------------- */
+/*----------------------------------- cart page start----------------------------------------- */
+.cartContiiner{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+  }
+
+
+  .cartTable{
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  .table img {
+    width: 3.5rem
+  }
+  
+  .checkOutBtn{
+      float: right;
+      margin-top: 20px;
+      padding: 15px 25px ;
+      background-color: #cc9966;
+      border: none;
+      color: white;
+      
+  }
+  
+  .checkOutBtn:hover{
+    background-color: black;
+    color: white;
+  text-decoration: none;
+  }
+
+  @media(max-width: 575.98px){
+    .table img {
+     display: none;
+    }
+
+    
+  }
+
+  
+  
+  
+  /*----------------------------------- cart page end----------------------------------------- */
+
+  /* ----------------------- checkout page start ------------------------- */
+
+.checkout-content{
+    width: 90%;
+   margin: auto;
+  
+    
+  }
+  
+  
+  
+   /* ----------------------- checkout progress bar start------------------------- */
+   
+  .checkout-content-container .progressBar{
+    display: flex;
+    margin: auto auto 40px auto;
+    user-select: none;
+  }
+  .checkout-content-container .progressBar .step{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    
+  }
+  .checkout-content-container .progressBar .step p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #684e0047;
+    margin-bottom: 8px;
+   
+
+  }
+
+  
+  .progressBar .step .bullet{
+    height: 35px;
+    width: 35px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .progressBar .step .bullet.active{
+    border-color: black;
+    background: black;
+  }
+  .progressBar .step .bullet span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .progressBar .step .bullet.active span{
+    display: none;
+  }
+  .progressBar .step .bullet:before,
+  .progressBar .step .bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -360px;
+    height: 3px;
+    width: 350px;
+    background: gray;
+  }
+  .progressBar .step .bullet.active:after{
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .progressBar .step:last-child .bullet:before,
+  .progressBar .step:last-child .bullet:after{
+    display: none;
+  }
+  .progressBar .step p.active{
+    color: #6e5712;
+    transition: 0.2s linear;
+  }
+
+  
+  .progressBar .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .progressBar .step .check.active{
+    display: block;
+    color: #fff;
+  }
+  
+  
+   /* ----------------------- checkout progress bar end------------------------- */
+   .checkout-content-container{
+    width: 100%;
+    
+    text-align: center;
+  
+    padding: 50px 35px 10px 35px;
+    
+  
+  }
+  
+  .checkout-content-container .form-outer{
+    overflow: hidden;
+    
+    
+  }
+
+
+  
+
+  .checkout-content-container .form-outer form{
+    display: flex;
+    width: 400%;
+    margin-top: 20px;
+    
+  }
+  .form-outer form .page{
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+    
+  }
+  .form-outer form .page .title{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 0 20px 20px;
+  
+  }
+  .form-outer form .page .field{
+    width: 80%;
+    margin: 20px 0;
+    display: inline-block;
+    margin-right: 60px;
+    position: relative;
+  }
+  
+  
+  
+  
+  form .page .field .label{
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+  }
+  form .page .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    
+  }
+  form .page .field select{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  form .page button{
+    width: 20%;
+    height: calc(100% + 5px);
+    border: none;
+    background: #cc9966;
+    margin-top: -20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    padding:10px
+    
+  }
+  form .page  button:hover{
+    background: #000;
+  }
+  form .page .btns button{
+    margin-top: 50px!important;
+  }
+  form .page .btns button.prev{
+    margin-right: 3px;
+  }
+  form .page.btns button.next{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  /*
+  input, button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+  
+  label {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+   
+  }
+  .page span {
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    
+  }
+  
+  input {
+   background-color: blanchedalmond;
+    width: 80%;
+    padding: 30px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+    */
+  
+    .form__input {
+     
+      width: 80%;
+      padding: 20px;
+      font-family: "Roboto";
+      -webkit-appearance: none;
+      border: none;
+      border-bottom: 1px solid gray;
+      outline: 0;
+      transition: 0.3s;
+      background-color: #684e0000;
+      
+    }
+    .form__input:focus {
+      background: #f7f7f7;
+    }
+    
+  .checkoutInputs{
+    column-count: 2;
+  }
+    
+  
+    .checkoutInputs p{
+      font-size: 22px;
+      color: #5b380b;
+    }
+
+
+     .firstPage{
+        margin: 100px auto auto 20px;
+      }
+
+      .finishTable{
+        background-color: tomato;
+      }
+  
+      @media(max-width: 575.98px){
+        .changeTitle[data-abbr]::after { 
+          content: attr(data-abbr); 
+          color: #684e0047;
+      }
+      
+      /* Hide the original label */
+      .changeTitle > p { display: none; }
+
+        .checkout-content-container .progressBar .step p{
+          font-size: 15px;
+        }
+
+        
+
+        
+        .progressBar .step .bullet:before,
+        .progressBar .step .bullet:after{
+          position: absolute;
+          content: '';
+          bottom: 11px;
+          right: -60px;
+          height: 3px;
+          width: 55px;
+          background: gray;
+        }
+
+
+        .checkout-content-container .form-outer{
+          
+          box-shadow: none;
+          
+        }
+
+
+        form .page button{
+          font-size: 13px;
+          font-weight: 300;
+          width: 30%;
+        }
+
+        .checkoutInputs{
+          column-count: 1;
+        }
+
+        .firstPage{
+          margin: 10px auto auto 20px;
+        }
+
+      }
+    
+    /* ----------------------- checkout page end ------------------------- ------------------ */
+    /* ------------------------ reservation start ------------------------------------------- */
+    
+    /* ------------------------- reservation end -------------------------------------------- */
